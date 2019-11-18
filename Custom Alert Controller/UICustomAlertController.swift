@@ -1,44 +1,10 @@
-# Custom-Loader-Alert-Controller
-
-## Custom Loading View Inside Alert Controller With Message.
-
-
-Added Some screens here.
-
-![](https://github.com/pawankv89/Custom-Loader-Alert-Controller/blob/master/images/screen_1.png)
-![](https://github.com/pawankv89/Custom-Loader-Alert-Controller/blob/master/images/screen_2.png)
-
-## Usage
-
-
-#### Controller
-
-``` swift 
-
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    
-       @IBAction func showLoader(_ sender: UIButton) {
-        
-            UICustomAlertController.shared.displayActivityIndicatorAlert(message: "Loading")
-            //UICustomAlertController.shared.displayActivityIndicatorAlert(message: "")
-            //UICustomAlertController.shared.displayActivityIndicatorAlert(message: nil)
-       }
-
-}
-
-``` 
-
-#### Controller
-
-``` swift 
+//
+//  UICustomAlertController.swift
+//  Photobook
+//
+//  Created by Pawan kumar on 14/11/19.
+//  Copyright © 2019 Pawan Kumar. All rights reserved.
+//
 
 import UIKit
 
@@ -134,15 +100,3 @@ extension UIAlertController {
         self.dismiss(animated: false)
     }
 }
-
-
-``` 
-
-## License
-
-This code is distributed under the terms and conditions of the [MIT license](LICENSE).
-
-## Change-log
-
-A brief summary of each this release can be found in the [CHANGELOG](CHANGELOG.mdown). 
-
